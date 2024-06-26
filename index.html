@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>JAT</title>
+  <head>
+
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="assets/img/Carousel/C_logo.png"
+      type="image/png"
+      sizes="16x16" />
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    
+    <link href="css/swiper-bundle.min.css" rel="stylesheet"
+      type="text/css" />
+  </head>
+
+  <body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <nav id="navspan" class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <a href="index.html#home" class="navbar-brand lg-0"
+        style="height: 40px"><img
+          class="d-inline-block align-top"
+          src="assets/img/c19o5.svg"
+          width="170"
+          style="padding-left: 15px" />
+      </a>
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item active">
+            <a href="index.html#home" class="nav-link active"> HOME </a>
+          </li>
+          <li class="nav-item active">
+            <a href="index.html#about" class="nav-link active"> ABOUT US </a>
+          </li>
+          <li class="nav-item active">
+            <a href="index.html#current_events" class="nav-link active">
+              CURRENT EVENTS
+            </a>
+          </li>
+
+          <li class="nav-item active">
+            <a href="index.html#contact_us" class="nav-link active"> CONTACT US
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="robots.html" class="nav-link active"> ROBOTS </a>
+          </li>
+          <li class="nav-item active">
+            <a href="blogs.html" class="nav-link active"> BLOGS </a>
+          </li>
+          <li class="nav-item active">
+            <a href="sponsors.html" class="nav-link active"> SPONSORS </a>
+          </li>
+          <li class="nav-item active">
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://www.paypal.com/paypalme/clutionr"
+              class="nav-link active">
+              DONATE
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+    const navLinks = document.querySelectorAll('.nav-item')
+  const menuToggle = document.getElementById('navbarNav')
+  const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+  navLinks.forEach((l) => { l.addEventListener('click', function execute(){
+   if(window.innerWidth <= 992) {
+    bsCollapse.toggle()
+     }
+
+})
+  })
+  </script>
+    <!-- PIX CAROUSEL -->
+
+    <div id="home" class="container-fluid text-center bg-2">
+      <div class="swiper">
+        <div class="swiper-wrapper"
+          style=" width: 100vw; margin-top: 60px">
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/cheader.svg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="clution Logo" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/ExcellenceInEngineeringTeamPic.JPG"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="clution Logo" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/Carousel/2023tp.JPG"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/Carousel/2022tp1.jpg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/Carousel/2019TP33.png"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/Carousel/TeamPic1.jpg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/Carousel/TeamPic2.jpg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/img/Carousel/sponsors.png"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Sponsors Image" loading="lazy" />
+            <div
+              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script>
+      var swiper = new Swiper(".swiper", {      
+      spaceBetween: 1,
+      lazy: true,
+      lazyPreloadPrevNext: 1,
+      speed: 1300,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      });
+                            </script>
+    <!-- ABOUT US -->
+    
+
+        <!-- CONTACT US (Part of Social Media)-->
+        <div id="contact" class="bg-1 col-md-6 text-center">
+          <div class="d-none d-md-block">
+            <iframe style="width: 80%;"
+              height="500px"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.3508162499984!2d-83.01199528841927!3d42.56907577105401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dbf5cb46e185%3A0x2a08df774b0870be!2sHeritage%20Junior%20High%20School!5e0!3m2!1sen!2sus!4v1702935699456!5m2!1sen!2sus"></iframe>
+
+            <br class="d-none d-md-block">
+            <p class="textcolor" style="padding: 0 10% 0 10%;">
+             
+            </p>
+          </div>
+          <p class="textcolor d-md-none" style="padding: 0 10% 0 10%;">
+           
+          </p>
+          <br>
+
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="d-none d-lg-block">
+      <div class="bg-1 bottomnav">
+        <div class="container-fluid">
+          <br />
+          <div class="row">
+            <div class="col-lg-3 ">
+              <a href="#home" class
+                style="height: 40px"><img
+                  class="bottomLogo "
+                  src="assets/img/Carousel/C_logo.png" /></a>
+            </div>
+            <div class="col-lg-6  text-center">
+              <p class="textcolor slogon">
+                
+              </p>
+              <p class="textcolor">
+                
+              </p>
+              <p class="textcolor">p
+                <a
+                  href="mailto:c.r@gmail.com">c.r@gmail.com</a></p>
+
+            </div>
+            <div class="col-lg-3 text-center">
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com/clution.r?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+                  class="bottomPR"
+                  src="assets/Social Media/Instagram.png"></a>
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/@clutionr2851">
+                <img class="bottomPR"
+                  src="assets/Social Media/Youtube.png">
+              </a>
+              <br>
+              <br>
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/clution2851/"><img
+                  class="bottomPR"
+                  src="assets/Social Media/Facebook.png"></a>
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/clution2851">
+                <img class="bottomPR"
+                  src="assets/Social Media/Twitter.png">
+              </a>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </footer>
+    <!-- Moblie footer -->
+    <footer class="d-lg-none">
+      <div id="contact_us" class="bg-1 bottomnav">
+        <div class="container-fluid text-center">
+          <br />
+          <a href="#home" class style="height: 40px"><img
+              class="bottomLogom"
+              src="assets/img/Carousel/C_logo.png" /></a>
+
+          <p class="textcolor slogon">
+            "A Creative Revolution"
+          </p>
+          <p class="textcolor">
+            For any comments or questions that concern
+            clution,
+          </p>
+          <p class="textcolor">please
+            contact us at
+            <a
+              href="mailto:c.r@gmail.com">c.r@gmail.com</a></p>
+          <div class="row">
+            <div class="col-3 text-center">
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com/clution.r?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+                  class="bottomPR"
+                  src="assets/Social Media/Instagram.png"></a>
+            </div>
+            <div class="col-3 text-center">
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/@clutionr2851">
+                <img class="bottomPR"
+                  src="assets/Social Media/Youtube.png"></a>
+            </div>
+            <div class="col-3 text-center">
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/clution2851/"><img
+                  class="bottomPR"
+                  src="assets/Social Media/Facebook.png"></a>
+            </div>
+            <div class="col-3 text-center">
+              <a class="bottomA" target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/clution2851">
+                <img class="bottomPR"
+                  src="assets/Social Media/Twitter.png"></a>
+
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
