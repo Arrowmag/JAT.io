@@ -1,5 +1,5 @@
 body {
-  background-color: #181a1b;
+  background-color: #eeeeee;
 
   overflow-x: hidden !important;
   /* ^ Used to hide the scrollbar*/
@@ -55,7 +55,7 @@ body {
   background-color: #c3a234 !important; /*#C28510 and 2B2D42 */
 }
 nav {
-  background-color: #1f1f2e;
+  background-color: #231f20;
   opacity: 0.95;
   font-family: Montserrat;
   font-size: 12px;
@@ -68,7 +68,10 @@ nav {
   padding: 22px 0 22px 0;
   
 }
-
+.Navimage{
+  width: 100px;
+  margin: 0 10px 0;
+}
 
 .navbar-toggler {
   margin-top: 11px;
@@ -122,7 +125,7 @@ nav {
   background-color: #c3a234 !important;
 }
 .mailform button{
-  background-color: #222227;
+  background-color: #eeeeee;
   margin: 5px 0 20px 0;
   border-color: #dadada;
   border-width: 2px;
