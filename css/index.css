@@ -52,7 +52,7 @@ body {
 
 .navbar-nav li:hover {
   color: #000 !important;
-  background-color: #c3a234 !important; /*#C28510 and 2B2D42 */
+  background-color: #da3832 !important; /*#4aa45b */
 }
 nav {
   background-color: #231f20;
@@ -83,11 +83,11 @@ nav {
   background-color: #231f20;
 }
 .bottomLogo {
-  width: 167px;
+  width: 300px;
   margin: 0px 0px 0px 30%;
 }
 .bottomLogom {
-  width: 125px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
   display: block;
