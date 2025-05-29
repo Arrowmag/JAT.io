@@ -2,21 +2,19 @@
 <html lang="en">
   <title>JAT</title>
   <head>
-
     <meta charset="UTF8" />
+    <author>Joey Tidrow</author>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="icon"
       href="assets/Jat logo title new.png"
       type="image/png"
       sizes="16x16" />
-    <link
-      href="css/bootstrap.min.css"
-      rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
-    
-    <link href="css/swiper-bundle.min.css" rel="stylesheet"
-      type="text/css" />
+
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -24,9 +22,9 @@
     <script src="js/swiper-bundle.min.js"></script>
 
     <nav id="navspan" class="navbar fixed-top navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="#">
-          <img src="assets/Jat logo.jpg" alt="Bootstrap" class="Navimage">
-        </a>
+      <a class="navbar-brand" href="#">
+        <img src="assets/Jat logo.jpg" alt="Bootstrap" class="Navimage" />
+      </a>
       <button
         type="button"
         data-bs-toggle="collapse"
@@ -40,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-center">
           <li class="nav-item active">
-            <a href="index.html#home" class="nav-link active"> Home </a>
+            <a href="index.html" class="nav-link active"> Home </a>
           </li>
           <li class="nav-item active">
             <a href="aboutus.html" class="nav-link active"> About Us </a>
@@ -51,161 +49,160 @@
           <li class="nav-item active">
             <a href="contact.html" class="nav-link active"> Contact Us </a>
           </li>
-          
         </ul>
       </div>
     </nav>
     <script>
-    const navLinks = document.querySelectorAll('.nav-item')
-  const menuToggle = document.getElementById('navbarNav')
-  const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
-  navLinks.forEach((l) => { l.addEventListener('click', function execute(){
-   if(window.innerWidth <= 992) {
-    bsCollapse.toggle()
-     }
+      const navLinks = document.querySelectorAll(".nav-item");
+      const menuToggle = document.getElementById("navbarNav");
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {
+        toggle: false,
+      });
+      navLinks.forEach((l) => {
+        l.addEventListener("click", function execute() {
+          if (window.innerWidth <= 992) {
+            bsCollapse.toggle();
+          }
+        });
+      });
+    </script>
+    <br />
+    <br />
+    <br /><!-- PIX CAROUSEL -->
 
-})
-  })
-  </script>
-  <br>
-  <br>
-  <br><!-- PIX CAROUSEL -->
-
-  
-    <img src="assets/IMG_0335.jpg" class="homeimg">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>This unique spice blend was created as part of a quick recipe to make a homemade pizza sauce.  With great results from this spontaneous concoction, the balanced blend of spices was recorded and refined.  Now you can enjoy this Fast, Easy, and Fresh recipe from JUST ADD TOMATOES in your own home!  Just combine (1) packet of the seasoning mix with a 28 oz can of crushed tomatoes (any brand or add your own garden fresh tomatoes) will create a perfect sauce every time.  It’s that’s simple!  Delicious and natural and there are no unnatural preservatives, no MSG, and it’s gluten free!</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <img src="assets/IMG_0335.jpg" class="homeimg" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+      This unique spice blend was created as part of a quick recipe to make a
+      homemade pizza sauce. With great results from this spontaneous concoction,
+      the balanced blend of spices was recorded and refined. Now you can enjoy
+      this Fast, Easy, and Fresh recipe from JUST ADD TOMATOES in your own home!
+      Just combine (1) packet of the seasoning mix with a 28 oz can of crushed
+      tomatoes (any brand or add your own garden fresh tomatoes) will create a
+      perfect sauce every time. It’s that’s simple! Delicious and natural and
+      there are no unnatural preservatives, no MSG, and it’s gluten free!
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <!-- PIX CAROUSEL -->
 
-    <div id="home" class="container-fluid text-center bg-2">
+    <div class="container-fluid text-center bg-2">
       <div class="swiper">
-        <div class="swiper-wrapper"
-          style=" width: 100vw; margin-top: 60px">
+        <div class="swiper-wrapper" style="width: 100vw; margin-top: 60px">
           <div class="swiper-slide">
             <img
               src="./assets/img/crevoheader.svg"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Crevolution Logo" loading="lazy" />
+              alt="Crevolution Logo"
+              loading="lazy" />
             <div
               class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
-          
-
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
     </div>
     <script>
-      var swiper = new Swiper(".swiper", {      
-      spaceBetween: 1,
-      lazy: true,
-      lazyPreloadPrevNext: 1,
-      speed: 1300,
-      centeredSlides: true,
-      loop: true,
-      autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      var swiper = new Swiper(".swiper", {
+        spaceBetween: 1,
+        lazy: true,
+        lazyPreloadPrevNext: 1,
+        speed: 1300,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
-                            </script>
-    
-    
+    </script>
 
-        <!-- CONTACT US (Part of Social Media)-->
-        
-          <p class="textcolor d-md-none" style="padding: 0 10% 0 10%;">
-           
-          </p>
-          <br>
+    <!-- CONTACT US (Part of Social Media)-->
 
-        </div>
-      </div>
-    </div>
+    <p class="textcolor d-md-none" style="padding: 0 10% 0 10%"></p>
+    <br />
+
     <!-- Footer -->
     <footer class="d-none d-lg-block">
       <div class="bg-1 bottomnav">
         <div class="container-fluid">
           <br />
           <div class="row">
-            <div class="col-lg-3 ">
-              <a href="#home" class
-                style="width: 320px"><img
-                  class="bottomLogo "
+            <div class="col-lg-3">
+              <a href="#home" class style="width: 320px"><img class="bottomLogo"
                   src="assets/Jat logo.jpg" /></a>
             </div>
-            <div class="col-lg-6  text-center">
-              <p class="textcolor slogon">
-                "A Better Tasting Pizza Sauce!"
-              </p>
+            <div class="col-lg-6 text-center">
+              <p class="textcolor slogon">"A Better Tasting Pizza Sauce!"</p>
+              <p class="textcolor">For any comments or questions</p>
               <p class="textcolor">
-                For any comments or questions
+                please contact us at
+                <a href="mailto: justaddtomatoes@gmail.com">
+                  justaddtomatoes@gmail.com</a>
               </p>
-              <p class="textcolor">please
-                contact us at
-                <a
-                  href="mailto: justaddtomatoes@gmail.com"> justaddtomatoes@gmail.com</a></p>
-
             </div>
             <div class="col-lg-3 text-center">
-              <a class="bottomA" target="_blank"
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/justaddtomatoes/"><img
                   class="bottomPR"
-                  src="assets/Social Media/Instagram.png"></a>
-              <a class="bottomA" target="_blank"
+                  src="assets/Social Media/Instagram.png" /></a>
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.youtube.com/@clutionr2851">
-                <img class="bottomPR"
-                  src="assets/Social Media/Youtube.png">
+                <img class="bottomPR" src="assets/Social Media/Youtube.png" />
               </a>
-              <br>
-              <br>
-              <a class="bottomA" target="_blank"
+              <br />
+              <br />
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/Just-Add-Tomatoes-1621166818113724/"><img
-                  class="bottomPR"
-                  src="assets/Social Media/Facebook.png"></a>
-              <a class="bottomA" target="_blank"
+                  class="bottomPR" src="assets/Social Media/Facebook.png" /></a>
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.pinterest.com/justaddtomatoes/just-add-tomatoes-pizza-gallery/">
-                <img class="bottomPR"
-                  src="assets/Social Media/Pinterest.svg">
+                <img class="bottomPR" src="assets/Social Media/Pinterest.svg" />
               </a>
             </div>
           </div>
-          <br>
+          <br />
         </div>
       </div>
     </footer>
@@ -214,60 +211,60 @@
       <div id="contact_us" class="bg-1 bottomnav">
         <div class="container-fluid text-center">
           <br />
-          <a href="#home" class style="height: 40px"><img
-              class="bottomLogom"
+          <a href="#home" class style="height: 40px"><img class="bottomLogom"
               src="assets/jat logo.jpg" /></a>
-          <p class="textcolor slogon">
-            "A Better Tasting Pizza Sauce!"
-          </p>
+          <p class="textcolor slogon">"A Better Tasting Pizza Sauce!"</p>
+          <p class="textcolor">For any comments or questions</p>
           <p class="textcolor">
-            For any comments or questions
+            please contact us at
+            <a href="mailto: justaddtomatoes@gmail.com">
+              justaddtomatoes@gmail.com</a>
           </p>
-          <p class="textcolor">please
-            contact us at
-            <a
-              href="mailto: justaddtomatoes@gmail.com"> justaddtomatoes@gmail.com</a></p>
           <div class="row">
             <div class="col-3 text-center">
-              <a class="bottomA" target="_blank"
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/justaddtomatoes/"><img
                   class="bottomPR"
-                  src="assets/Social Media/Instagram.png"></a>
+                  src="assets/Social Media/Instagram.png" /></a>
             </div>
             <div class="col-3 text-center">
-              <a class="bottomA" target="_blank"
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.youtube.com/@clutionr2851">
                 <img class="bottomPR"
-                  src="assets/Social Media/Youtube.png"></a>
+                  src="assets/Social Media/Youtube.png" /></a>
             </div>
             <div class="col-3 text-center">
-              <a class="bottomA" target="_blank"
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/Just-Add-Tomatoes-1621166818113724/"><img
-                  class="bottomPR"
-                  src="assets/Social Media/Facebook.png"></a>
+                  class="bottomPR" src="assets/Social Media/Facebook.png" /></a>
             </div>
             <div class="col-3 text-center">
-              <a class="bottomA" target="_blank"
+              <a
+                class="bottomA"
+                target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.pinterest.com/justaddtomatoes/just-add-tomatoes-pizza-gallery/">
                 <img class="bottomPR"
-                  src="assets/Social Media/Pinterest.svg"></a>
-
+                  src="assets/Social Media/Pinterest.svg" /></a>
             </div>
-            <br>
-            <br>
-            <br>
-            <p class="text-center text-light">© Copyright 2024 | Just Add Tomatoes</p>
+            <br />
+            <br />
+            <br />
+            <p class="text-center text-light">
+              © Copyright 2024 | Just Add Tomatoes
+            </p>
           </div>
-
-          
         </div>
       </div>
     </footer>
-
-    
   </body>
 </html>
