@@ -1,5 +1,5 @@
 body {
-  background-color: #E2DFDF;
+  background-color: #5e5e5e;  /* #231f20 */
 
   overflow-x: hidden !important;
   /* ^ Used to hide the scrollbar*/
@@ -101,4 +101,7 @@ nav {
 .slogon{
   margin: 20px 0 20px 0;
   font-size: 24px;
+}
+footer {
+  
 }
