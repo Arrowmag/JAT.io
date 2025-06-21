@@ -3,7 +3,8 @@
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
+  border-width: 0 !important;
 }
 
 .contact-intro > * + * {
@@ -17,7 +18,8 @@
 }
 
 .contact-description {
-  color: rgb(107 114 128);
+  color: white;
+  text-align: center;
 }
 
 .form-group-container {
@@ -37,8 +39,7 @@
 
 .form-input,
 .form-textarea {
-  padding: 0.5rem;
-  border: 1px solid #e5e7eb;
+  padding: 0.25rem;
   display: flex;
   height: 2.5rem;
   width: 100%;
@@ -54,7 +55,7 @@
 
 .form-input:focus-visible,
 .form-textarea:focus-visible {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #da3832;
   outline-offset: 2px;
 }
 
@@ -65,8 +66,11 @@
 .form-submit {
   width: 100%;
   margin-top: 1.2rem;
-  background-color: #3124ca;
+  background-color: #da3832;
   color: #fff;
   padding: 13px 5px;
   border-radius: 0.375rem;
+}
+body {
+  background-color: #231f20;  /* #231f20 */
 }
