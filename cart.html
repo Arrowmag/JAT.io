@@ -14,7 +14,7 @@
         <link rel="shortcut icon" href="/assets/favicon/favicon.ico?" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" type="text/css" />
-        <link href="css/shop.css" rel="stylesheet" type="text/css" />
+        <link href="css/cart.css" rel="stylesheet" type="text/css" />
 
         <link href="css/swiper-bundle.min.css" rel="stylesheet"
             type="text/css" />
@@ -25,20 +25,6 @@
     <body>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
-        <script
-            src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=YOUR_COMPONENTS"></script>
-        <script
-            src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=buttons"></script>
-        <script>
-    import { loadScript } from "@paypal/paypal-js";
-loadScript({ "client-id": TEST })
-.then((paypal) => {
-    // start to use the PayPal JS SDK script
-})
-.catch((err) => {
-    console.error("failed to load the PayPal JS SDK script", err);
-});
-</script>
 
         <nav id="navspan" class="navbar fixed-top navbar-expand-md navbar-dark">
             <a class="navbar-brand" href="#">
@@ -86,51 +72,74 @@ loadScript({ "client-id": TEST })
         });
       });
     </script>
-            <br />
-            <br />
-            <br /><!-- PIX CAROUSEL -->
+            <hr
+                style="border: none; height: 65px; background: #000000; margin: 0 0;" />
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-8">
-                        <p> test </p>
-                    </div>
-                    <div class="col-4">
-                        <paypal-add-to-cart-button
-                            data-id="UT79ED5JFB4EL"></paypal-add-to-cart-button>
-                        <script>
-  cartPaypal.AddToCart({ id: "UT79ED5JFB4EL" })
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+            <script>
+  cartPaypal.Cart({ id: "pp-view-cart" })
 </script>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <!-- PIX CAROUSEL -->
+
+            <div class="container-fluid text-center bg-2">
+                <div class="swiper">
+                    <div class="swiper-wrapper"
+                        style="width: 100vw; margin-top: 60px">
+                        <div class="swiper-slide">
+                            <img
+                                src="./assets/img/crevoheader.svg"
+                                style="object-fit: cover"
+                                class="d-block w-100 indexcar"
+                                alt="Crevolution Logo"
+                                loading="lazy" />
+                            <div
+                                class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <p> test </p>
-                    </div>
-                    <div class="col-4">
-                        <p> test </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <p> test </p>
-                    </div>
-                    <div class="col-4">
-                        <p> test </p>
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <script>
+      var swiper = new Swiper(".swiper", {
+        spaceBetween: 1,
+        lazy: true,
+        lazyPreloadPrevNext: 1,
+        speed: 1300,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
             <!-- CONTACT US (Part of Social Media)-->
 
@@ -255,7 +264,7 @@ loadScript({ "client-id": TEST })
                             <br />
                             <br />
                             <p class="text-center text-light">
-                                © Copyright 2025 | Just Add Tomatoes
+                                © Copyright 2024 | Just Add Tomatoes
                             </p>
                         </div>
                     </div>
