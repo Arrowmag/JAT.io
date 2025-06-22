@@ -49,7 +49,9 @@ body {
   padding-bottom: 3px;
   padding-top: 3px;
 }
-
+.viewCartButtonContainer:hover {
+  background-color: #da3832 !important; /*#4aa45b */
+}
 .navbar-nav li:hover {
   color: #000 !important;
   background-color: #da3832 !important; /*#4aa45b */

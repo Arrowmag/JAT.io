@@ -1,4 +1,11 @@
 .row {
-  height: 100px;
+  height: 100px !important;
   width: 100%;
 }
+
+#quantity {
+  background-color: #231f20 !important;
+  color: white !important;
+
+}
+
