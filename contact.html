@@ -27,40 +27,44 @@
         <script src="js/swiper-bundle.min.js"></script>
 
         <nav id="navspan" class="navbar fixed-top navbar-expand-md navbar-dark">
-            <a class="navbar-brand" href="#">
-                <img src="assets/Jat logo.jpg" alt="Bootstrap"
-                    class="Navimage" />
-            </a>
-            <button
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                class="navbar-toggler"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav text-center">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link active"> Home
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="aboutus.html" class="nav-link active"> About Us
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="shop.html" class="nav-link active"> Shop </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="contact.html" class="nav-link active"> Contact
-                            Us </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <a class="navbar-brand" href="#">
+        <img src="assets/Jat logo.jpg" alt="Bootstrap" class="Navimage" />
+      </a>
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link active"> Home </a>
+          </li>
+          <li class="nav-item active">
+            <a href="shop.html" class="nav-link active"> Shop </a>
+          </li>
+          <li class="nav-item active">
+            <a href="contact.html" class="nav-link active"> Contact Us </a>
+          </li>
+          </li>
+        </ul>
+        <ul class="navbar-nav text-end ms-auto ">
+
+          <li class="nav-item active CartLi">
+            <paypal-cart-button class="Cart "
+              data-id="pp-view-cart"></paypal-cart-button>
+            <script>
+  cartPaypal.Cart({ id: "pp-view-cart" })
+</script>
+          </li>
+        </ul>
+      </div>
+    </nav>
         <script>
       const navLinks = document.querySelectorAll(".nav-item");
       const menuToggle = document.getElementById("navbarNav");
