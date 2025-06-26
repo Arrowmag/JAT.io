@@ -49,13 +49,7 @@ body {
   padding-bottom: 3px;
   padding-top: 3px;
 }
-.viewCartButtonContainer:hover {
-  background-color: #da3832 !important; /*#4aa45b */
-}
-.navbar-nav li:hover {
-  color: #000 !important;
-  background-color: #da3832 !important; /*#4aa45b */
-}
+
 nav {
   background-color: #231f20;
   opacity: 0.98;
@@ -104,6 +98,42 @@ nav {
   margin: 20px 0 20px 0;
   font-size: 24px;
 }
-footer {
-  
+
+.Cart {
+  background-color: #231f20;
+  color: white;
+  text-align: center;
+
+}
+.viewCartButtonContainer {
+ padding-top: 22px !important;
+ padding-bottom: 22px !important;
+ padding-left: auto !important;
+ padding-right: auto !important;
+ height: auto !important;
+ border-radius: 0 !important;
+ text-align: center !important;
+  overflow: auto !important;
+ align-items:center !important;
+}
+.CartLi {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .CartLi {
+  margin-left: auto !important; 
+  margin-right: 0 !important;
+	display:flex;
+	align-items:center;
+} */
+
+.viewCartButtonContainer:hover {
+  background-color: #da3832 !important; /*#4aa45b */
+}
+.navbar-nav li:hover {
+  color: #000 !important;
+  background-color: #da3832 !important; /*#4aa45b */
 }

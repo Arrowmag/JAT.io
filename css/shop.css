@@ -1,8 +1,12 @@
 .row {
-  height: 100px !important;
-  width: 100%;
-}
 
+}
+.col-8 {
+  background-color: aliceblue !important;
+}
+.col-4 {
+  background-color: aliceblue !important;
+}
 #quantity {
   background-color: #231f20 !important;
   color: white !important;
